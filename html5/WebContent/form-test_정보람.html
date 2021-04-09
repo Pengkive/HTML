@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form-test</title>
+</head>
+<body>
+<h1>ITWILL 회원가입</h1>
+
+<input type="text" disabled value="자바(JAVA) 개발자 양성"> <b>과정</b> 
+<p>
+<fieldset>
+ <legend><b>[ 필수 입력 ]</b> </legend>
+ 	<b>♣ 이름</b><input type="text"> <br>
+ 	<label><b>♣ 아이디 </b><input type="text" placeholder="8~10자 영문과 숫자 조합" ></label> <br>
+ 	<label><b>♣ 비밀번호 </b><input type="password" placeholder="8~12자 영문,숫자,특수문자" ></label><br>
+
+<p>
+	<b>♣ 성별 </b><br>
+	<label> <input type="radio" name="gender"><b>남</b></label> <br>
+	<label> <input type="radio" name="gender" checked><b>여</b></label> <br>
+	<label> <input type="radio" name="gender"><b>기타</b></label> <br>
+</p>
+<p>
+	<b>♣ 생년월일 </b><input type="date"> <br>
+	<label><b>♣ 전화번호 </b><input type="tel" placeholder="(예시)010-777-8888"></label><br>
+	<b>♣ email </b><input type="email"><br>
+</p>
+<hr>
+<p>
+	<b>♣ 아이티윌부산이 제공하는 정보를 받으시겠습니까?</b>
+</p>
+<p>
+	<label> <input type="radio" name="choice" checked><b> 받습니다</b></label> <br>
+	<label> <input type="radio" name="choice" checked><b> 받지 않겠습니다</b></label> <br>
+</p>
+<p>
+	<label><input type="checkbox" checked><b> 이메일</b></label>
+	<label><input type="checkbox"><b> 문자</b></label>
+	<label><input type="checkbox" checked><b> 카카오톡</b></label>
+	<label><input type="checkbox"><b> 우편</b></label>
+</p>
+</fieldset>
+<p>
+</p>
+<fieldset>
+ <legend><b>[ 선택 입력 ]</b></legend>
+<br> 
+	<b>♣ 자기소개를 해주세요</b><br>
+	 <textarea cols="100" rows= "10">간단히 작성하세요</textarea>
+<p>	 
+	<b>♣ 블로그 주소 </b><input type="email">
+</p>
+<p>
+	<b>♣ 학과를 선택해주세요 </b><br>
+   <select>
+   <option>컴퓨터공학과</option>
+   <option selected>산업공학과</option> 
+   <option>기계공학과</option>
+   <option>화학공학과</option>
+   <option>전기전자공학과</option>
+   <option>건축공학과</option>
+  </select>
+</p>
+<p>
+	<b>♣ 취미, 특기를 선택해주세요</b><br>
+	<select multiple>
+	<optgroup label="취미">
+		<option>등산</option>
+		<option>여행</option>
+		<option selected>요리</option>
+		<option>게임</option>	
+	</optgroup>
+	<optgroup label="특기">
+		<option>운동</option>
+		<option selected>바둑</option>
+		<option>음악</option>
+		<option>무용</option>
+	</optgroup>
+	</select>
+</p>
+</fieldset>
+<br>
+
+	<button type="submit"><img src="yellowup.gif" > 가입 </button>
+	<button type="reset"><img src="yellowup.gif" > 취소 </button>
+
+
+
+
+</body>
+</html>
